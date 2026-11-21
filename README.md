@@ -20,7 +20,7 @@ Página web informativa de la carrera **Ingeniería en Computación** de la **Un
 6. Perfiles de salida
 7. Áreas de estudio
 8. Plan de estudio por modalidad
-9. Reseñas (estáticas + cargadas desde la base de datos)
+9. Reseñas (cargadas dinámicamente desde la base de datos)
 10. Formulario de comentarios (guardado en base de datos online)
 
 ## Tecnologías

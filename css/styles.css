@@ -543,6 +543,7 @@ button, input, select, textarea { font: inherit; }
   margin: -1.5rem 0 2.5rem;
   color: var(--gris-texto);
 }
+.resenas__resumen[hidden] { display: none; }
 .resenas__resumen strong { font-size: 2.4rem; color: var(--azul); }
 .resena {
   background: var(--blanco);

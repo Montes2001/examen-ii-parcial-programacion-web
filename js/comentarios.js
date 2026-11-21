@@ -54,7 +54,7 @@ function actualizarResumen(promedio, total) {
   resumen.hidden = false;
   document.getElementById('promedio').textContent = Number(promedio).toFixed(1);
   document.getElementById('promedioEstrellas').textContent = estrellas(Math.round(promedio));
-  document.getElementById('totalResenas').textContent = `${total} ${total === 1 ? 'reseña' : 'reseñas'} en la base de datos`;
+  document.getElementById('totalResenas').textContent = `${total} ${total === 1 ? 'reseña' : 'reseñas'}`;
 }
 
 async function cargarComentarios() {
@@ -66,14 +66,14 @@ async function cargarComentarios() {
 
     contenedor.innerHTML = '';
     if (!datos.comentarios.length) {
-      contenedor.innerHTML = '<p class="cargando" id="estadoResenas">Aún no hay comentarios. ¡Sé el primero en opinar!</p>';
+      contenedor.innerHTML = '<p class="cargando" id="estadoResenas">Aún no hay reseñas. ¡Sé el primero en opinar!</p>';
     } else {
       datos.comentarios.forEach(c => contenedor.appendChild(crearTarjeta(c)));
     }
     actualizarResumen(datos.promedio, datos.total);
   } catch (error) {
     console.error('Error al cargar comentarios:', error);
-    contenedor.innerHTML = '<p class="cargando">No fue posible cargar los comentarios en este momento.</p>';
+    contenedor.innerHTML = '<p class="cargando">No fue posible cargar las reseñas en este momento.</p>';
   }
 }
 

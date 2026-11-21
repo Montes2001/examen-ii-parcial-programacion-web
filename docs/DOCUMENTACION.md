@@ -125,10 +125,10 @@ Examen ll Parcial - Programacion Web/
 | 6 | **Perfiles de salida** | Perfil oficial del egresado y campo laboral. | `#perfiles` |
 | 7 | **Áreas de estudio** | Las 5 áreas oficiales más Hardware y Arquitectura, con las asignaturas relacionadas. | `#areas` |
 | 8 | **Plan de estudio por modalidad** | Pestañas que generan con JavaScript la malla de cada modalidad: 10 semestres (Matutina), 15 cuatrimestres (Sabatina) y 12 semestres (Por Encuentro). | `#plan` |
-| 9 | **Reseñas** | Tres testimonios destacados más los comentarios guardados en la base de datos, con calificación promedio. | `#resenas` |
+| 9 | **Reseñas** | Muestra las reseñas reales guardadas en la base de datos junto con la calificación promedio (permanece vacía hasta que se registre el primer comentario). | `#resenas` |
 | 10 | **Formulario de comentarios** | Nombre, correo, tipo de usuario, modalidad, calificación (estrellas) y comentario. Validación en el cliente y en el servidor. | `#comentarios` |
 
-> **Nota sobre el contenido:** el objetivo, la duración (4 ½ años), el turno matutino, el perfil del egresado, las áreas de estudio y el plan de asignaturas son los **publicados oficialmente** en https://unhsjm.edu.ni/ingenieria-en-computacion/. Las modalidades Sabatina y Por Encuentro, los horarios detallados, el organigrama (armado a partir de las direcciones académicas y dependencias que aparecen en el sitio oficial) y los testimonios destacados son **referenciales** y se incluyen con fines académicos. Las modalidades referenciales reparten las mismas 58 asignaturas oficiales, en el mismo orden, en más períodos.
+> **Nota sobre el contenido:** el objetivo, la duración (4 ½ años), el turno matutino, el perfil del egresado, las áreas de estudio y el plan de asignaturas son los **publicados oficialmente** en https://unhsjm.edu.ni/ingenieria-en-computacion/. Las modalidades Sabatina y Por Encuentro, los horarios detallados y el organigrama (armado a partir de las direcciones académicas y dependencias que aparecen en el sitio oficial) son **referenciales** y se incluyen con fines académicos. Las modalidades referenciales reparten las mismas 58 asignaturas oficiales, en el mismo orden, en más períodos.
 
 ## 7. Hoja de estilo (CSS)
 
