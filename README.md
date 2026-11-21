@@ -5,8 +5,8 @@ Página web informativa de la carrera **Ingeniería en Computación** de la **Un
 **Examen II Parcial · Programación Web**
 **Autor:** Giancarlo Javier Montes Arauz
 
-🔗 **Sitio publicado:** _URL_DE_VERCEL_
-📦 **Repositorio:** _URL_DE_GITHUB_
+🔗 **Sitio publicado:** https://examen-ii-parcial-programacion-web.vercel.app
+📦 **Repositorio:** https://github.com/Montes2001/examen-ii-parcial-programacion-web
 
 ---
 
