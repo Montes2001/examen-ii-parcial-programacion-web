@@ -1,0 +1,19 @@
+{
+  "name": "ingenieria-computacion-unhsjm",
+  "version": "1.0.0",
+  "description": "Página web de la carrera Ingeniería en Computación - Universidad Nacional Héroes de San José de las Mulas (Examen II Parcial - Programación Web)",
+  "author": "Giancarlo Javier Montes Arauz",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

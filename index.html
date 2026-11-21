@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ingeniería en Computación - Universidad Nacional Héroes de San José de las Mulas (UNHSJM), Managua, Nicaragua.">
+  <meta name="author" content="Giancarlo Javier Montes Arauz">
+  <title>Ingeniería en Computación | UNHSJM</title>
+  <link rel="icon" href="img/logo-icono.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ==================== 2. MENÚ PRINCIPAL ==================== -->
+  <header class="header" id="header">
+    <nav class="nav contenedor" aria-label="Menú principal">
+      <a href="#inicio" class="nav__logo" aria-label="Ir al inicio">
+        <img src="img/logo-unhsjm.png" alt="Logo UNHSJM - Universidad Nacional Héroes de San José de las Mulas">
+      </a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#inicio" class="nav__link activo">Inicio</a></li>
+        <li><a href="#organigrama" class="nav__link">Organigrama</a></li>
+        <li><a href="#carrera" class="nav__link">La Carrera</a></li>
+        <li><a href="#modalidades" class="nav__link">Modalidades</a></li>
+        <li><a href="#perfiles" class="nav__link">Perfiles</a></li>
+        <li><a href="#areas" class="nav__link">Áreas</a></li>
+        <li><a href="#plan" class="nav__link">Plan de Estudio</a></li>
+        <li><a href="#resenas" class="nav__link">Reseñas</a></li>
+        <li><a href="#comentarios" class="nav__link nav__link--cta">Comentar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ==================== 1. CARRUSEL INFORMATIVO ==================== -->
+    <section class="carrusel" id="inicio" aria-roledescription="carrusel" aria-label="Información destacada">
+      <div class="carrusel__pista" id="carruselPista">
+
+        <article class="carrusel__slide activo" style="background-image: url('img/slide-1.jpg')">
+          <div class="carrusel__contenido contenedor">
+            <span class="etiqueta">Dirección de Ciencias Básicas y Tecnología</span>
+            <h1>Ingeniería en Computación</h1>
+            <p>Forma parte de la nueva generación de ingenieros que diseñan, implementan y gestionan la tecnología que transforma Nicaragua.</p>
+            <div class="carrusel__botones">
+              <a href="#carrera" class="btn btn--primario">Conoce la carrera</a>
+              <a href="#plan" class="btn btn--secundario">Ver plan de estudio</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="carrusel__slide" style="background-image: url('img/slide-2.jpg')">
+          <div class="carrusel__contenido contenedor">
+            <span class="etiqueta">Duración y turno</span>
+            <h2>4 ½ años · Turno Matutino</h2>
+            <p>10 semestres de formación integral en hardware, software, redes, inteligencia artificial y robótica.</p>
+            <div class="carrusel__botones">
+              <a href="#modalidades" class="btn btn--primario">Modalidades y horarios</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="carrusel__slide" style="background-image: url('img/slide-3.jpg')">
+          <div class="carrusel__contenido contenedor">
+            <span class="etiqueta">Áreas de estudio</span>
+            <h2>Redes, Ciberseguridad y Bases de Datos</h2>
+            <p>Aprende a construir y proteger la infraestructura tecnológica de las organizaciones públicas y privadas.</p>
+            <div class="carrusel__botones">
+              <a href="#areas" class="btn btn--primario">Explorar áreas</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="carrusel__slide" style="background-image: url('img/slide-4.jpg')">
+          <div class="carrusel__contenido contenedor">
+            <span class="etiqueta">Educación pública y gratuita</span>
+            <h2>Inteligencia Artificial y Robótica</h2>
+            <p>Desarrolla competencias en aprendizaje automático, redes neuronales, sistemas de control y robótica.</p>
+            <div class="carrusel__botones">
+              <a href="#perfiles" class="btn btn--primario">Perfil de egreso</a>
+              <a href="#comentarios" class="btn btn--secundario">Déjanos tu comentario</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <button class="carrusel__flecha carrusel__flecha--izq" id="carruselPrev" aria-label="Diapositiva anterior">&#10094;</button>
+      <button class="carrusel__flecha carrusel__flecha--der" id="carruselNext" aria-label="Diapositiva siguiente">&#10095;</button>
+      <div class="carrusel__indicadores" id="carruselIndicadores" role="tablist" aria-label="Seleccionar diapositiva"></div>
+    </section>
+
+    <!-- Franja de datos rápidos -->
+    <section class="datos">
+      <div class="contenedor datos__grid">
+        <div class="dato"><strong>4 ½</strong><span>años de duración</span></div>
+        <div class="dato"><strong>10</strong><span>semestres</span></div>
+        <div class="dato"><strong>58</strong><span>asignaturas</span></div>
+        <div class="dato"><strong>100%</strong><span>educación gratuita</span></div>
+      </div>
+    </section>
+
+    <!-- ==================== 3. ORGANIGRAMA ==================== -->
+    <section class="seccion" id="organigrama">
+      <div class="contenedor">
+        <header class="seccion__encabezado">
+          <span class="seccion__pre">Nuestra institución</span>
+          <h2 class="seccion__titulo">Organigrama de la Universidad</h2>
+          <p class="seccion__desc">Estructura organizativa de la Universidad Nacional Héroes de San José de las Mulas y ubicación de la carrera de Ingeniería en Computación.</p>
+        </header>
+
+        <div class="organigrama" role="tree" aria-label="Organigrama institucional">
+          <ul>
+            <li>
+              <div class="nodo nodo--nivel1">Consejo Universitario</div>
+              <ul>
+                <li>
+                  <div class="nodo nodo--nivel2">Rectoría</div>
+                  <ul>
+                    <li>
+                      <div class="nodo nodo--nivel3">Vicerrectoría Académica</div>
+                      <ul class="organigrama__lista">
+                        <li><div class="nodo nodo--hoja">Dirección de Educación, Arte y Humanidades</div></li>
+                        <li><div class="nodo nodo--hoja">Dirección de Ciencias de la Salud</div></li>
+                        <li>
+                          <div class="nodo nodo--hoja nodo--destacado">Dirección de Ciencias Básicas y Tecnología</div>
+                          <ul class="organigrama__carreras">
+                            <li>Ingeniería en Sistemas</li>
+                            <li class="actual">Ingeniería en Computación</li>
+                            <li>Ingeniería en Biotecnología</li>
+                          </ul>
+                        </li>
+                        <li><div class="nodo nodo--hoja">Dirección de Ciencias Sociales, Económicas Administrativas y Ciencias Jurídicas</div></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <div class="nodo nodo--nivel3">Secretaría General</div>
+                      <ul class="organigrama__lista">
+                        <li><div class="nodo nodo--hoja">Registro Académico</div></li>
+                        <li><div class="nodo nodo--hoja">Expediente Digital</div></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <div class="nodo nodo--nivel3">Vicerrectoría Administrativa y Financiera</div>
+                      <ul class="organigrama__lista">
+                        <li><div class="nodo nodo--hoja">Bienestar Estudiantil (Becas, Cultura y Deporte)</div></li>
+                        <li><div class="nodo nodo--hoja">Biblioteca Aldo Díaz Lacayo</div></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <div class="nodo nodo--nivel3">Vicerrectoría de Investigación y Extensión</div>
+                      <ul class="organigrama__lista">
+                        <li><div class="nodo nodo--hoja">CUR Regionales</div></li>
+                        <li><div class="nodo nodo--hoja">Extensión y Centros de Investigación</div></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 4. DESCRIPCIÓN DE LA CARRERA ==================== -->
+    <section class="seccion seccion--alterna" id="carrera">
+      <div class="contenedor carrera">
+        <div class="carrera__imagen">
+          <img src="img/slide-2.jpg" alt="Tarjeta madre de computadora" loading="lazy">
+          <div class="carrera__sello">
+            <img src="img/logo-icono.webp" alt="">
+            <span>Ingeniero(a) en Computación</span>
+          </div>
+        </div>
+        <div class="carrera__texto">
+          <span class="seccion__pre">Descripción de la carrera</span>
+          <h2 class="seccion__titulo seccion__titulo--izq">Ingeniería en Computación</h2>
+          <p class="carrera__objetivo">
+            <strong>Objetivo:</strong> formar ingenieros en computación capaces de diseñar, implementar y gestionar
+            sistemas y aplicaciones informáticas innovadoras, atendiendo a las necesidades tecnológicas de diversos
+            sectores industriales y empresariales.
+          </p>
+          <p>
+            La carrera integra el estudio del <strong>hardware</strong>, el <strong>software</strong> y las
+            <strong>comunicaciones</strong>. Durante su formación, el estudiante combina las ciencias básicas
+            (matemática, física y estadística) con la programación, las bases de datos, la arquitectura de
+            computadoras, los sistemas digitales, las redes, la inteligencia artificial y la robótica, además de
+            prácticas de familiarización y profesionalización.
+          </p>
+          <ul class="carrera__datos">
+            <li><span class="icono">🎓</span><div><strong>Título</strong>Ingeniero(a) en Computación</div></li>
+            <li><span class="icono">🏛️</span><div><strong>Dirección</strong>Ciencias Básicas y Tecnología</div></li>
+            <li><span class="icono">📅</span><div><strong>Duración</strong>4 ½ años (10 semestres)</div></li>
+            <li><span class="icono">⏰</span><div><strong>Turno</strong>Matutino</div></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 5. MODALIDADES, DURACIÓN Y HORARIOS ==================== -->
+    <section class="seccion" id="modalidades">
+      <div class="contenedor">
+        <header class="seccion__encabezado">
+          <span class="seccion__pre">¿Cuándo estudiar?</span>
+          <h2 class="seccion__titulo">Modalidades, duración y horarios</h2>
+          <p class="seccion__desc">Elige la modalidad que mejor se adapte a tu ritmo de vida.</p>
+        </header>
+
+        <div class="tarjetas tarjetas--3">
+          <article class="modalidad modalidad--destacada">
+            <span class="modalidad__badge">Oficial</span>
+            <div class="modalidad__icono">☀️</div>
+            <h3>Regular – Matutina</h3>
+            <p class="modalidad__tipo">Presencial</p>
+            <ul>
+              <li><strong>Duración:</strong> 4 ½ años</li>
+              <li><strong>Períodos:</strong> 10 semestres</li>
+              <li><strong>Días:</strong> lunes a viernes</li>
+              <li><strong>Horario:</strong> 7:00 a.m. – 12:00 m.</li>
+            </ul>
+          </article>
+
+          <article class="modalidad">
+            <span class="modalidad__badge modalidad__badge--ref">Referencial</span>
+            <div class="modalidad__icono">📚</div>
+            <h3>Sabatina</h3>
+            <p class="modalidad__tipo">Presencial por encuentros</p>
+            <ul>
+              <li><strong>Duración:</strong> 5 años</li>
+              <li><strong>Períodos:</strong> 15 cuatrimestres</li>
+              <li><strong>Días:</strong> sábados</li>
+              <li><strong>Horario:</strong> 8:00 a.m. – 5:00 p.m.</li>
+            </ul>
+          </article>
+
+          <article class="modalidad">
+            <span class="modalidad__badge modalidad__badge--ref">Referencial</span>
+            <div class="modalidad__icono">💻</div>
+            <h3>Por Encuentro – Dominical</h3>
+            <p class="modalidad__tipo">Semipresencial (EVA UNHSJM)</p>
+            <ul>
+              <li><strong>Duración:</strong> 6 años</li>
+              <li><strong>Períodos:</strong> 12 semestres</li>
+              <li><strong>Días:</strong> domingos + plataforma virtual</li>
+              <li><strong>Horario:</strong> 8:00 a.m. – 4:00 p.m.</li>
+            </ul>
+          </article>
+        </div>
+        <p class="nota">
+          * La modalidad <strong>Regular – Matutina</strong> es la publicada oficialmente por la universidad.
+          Las modalidades marcadas como <em>Referencial</em> se presentan con fines académicos para este ejercicio.
+        </p>
+      </div>
+    </section>
+
+    <!-- ==================== 6. PERFILES DE SALIDA ==================== -->
+    <section class="seccion seccion--oscura" id="perfiles">
+      <div class="contenedor">
+        <header class="seccion__encabezado">
+          <span class="seccion__pre">Al graduarte</span>
+          <h2 class="seccion__titulo">Perfiles de Salida</h2>
+          <p class="seccion__desc">Competencias que desarrolla el egresado de Ingeniería en Computación.</p>
+        </header>
+
+        <div class="perfiles">
+          <div class="perfiles__col">
+            <h3>Perfil del egresado</h3>
+            <ul class="lista-check">
+              <li>Dominio de lenguajes de programación y estructuras de datos.</li>
+              <li>Capacidad para diseñar y optimizar algoritmos.</li>
+              <li>Habilidades en el desarrollo de software y aplicaciones móviles.</li>
+              <li>Conocimientos en inteligencia artificial, redes neuronales y aprendizaje automático.</li>
+              <li>Competencia en la gestión de bases de datos y sistemas operativos.</li>
+            </ul>
+          </div>
+          <div class="perfiles__col">
+            <h3>Campo laboral</h3>
+            <div class="chips">
+              <span class="chip">Desarrollador(a) de software</span>
+              <span class="chip">Desarrollador(a) web y móvil</span>
+              <span class="chip">Administrador(a) de bases de datos</span>
+              <span class="chip">Administrador(a) de redes</span>
+              <span class="chip">Especialista en ciberseguridad</span>
+              <span class="chip">Ingeniero(a) de IA / Machine Learning</span>
+              <span class="chip">Soporte e infraestructura TI</span>
+              <span class="chip">Sistemas embebidos y robótica</span>
+              <span class="chip">Emprendedor(a) tecnológico</span>
+              <span class="chip">Docente e investigador(a)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 7. ÁREAS DE ESTUDIO ==================== -->
+    <section class="seccion" id="areas">
+      <div class="contenedor">
+        <header class="seccion__encabezado">
+          <span class="seccion__pre">¿Qué aprenderás?</span>
+          <h2 class="seccion__titulo">Áreas de Estudio</h2>
+        </header>
+
+        <div class="tarjetas tarjetas--areas">
+          <article class="area">
+            <div class="area__icono">👨‍💻</div>
+            <h3>Programación y Desarrollo de Software</h3>
+            <p>Programación, POO, Ingeniería de Requerimientos, Ingeniería del Software, Programación Web y Móvil.</p>
+          </article>
+          <article class="area">
+            <div class="area__icono">🧮</div>
+            <h3>Algoritmos y Estructuras de Datos</h3>
+            <p>Algoritmos, Estructuras Discretas, Estructura de Datos y Análisis Algorítmico Avanzado.</p>
+          </article>
+          <article class="area">
+            <div class="area__icono">🤖</div>
+            <h3>Inteligencia Artificial y Machine Learning</h3>
+            <p>Inteligencia Artificial, Robótica, Sistemas de Control y Simulación por Computadoras.</p>
+          </article>
+          <article class="area">
+            <div class="area__icono">🌐</div>
+            <h3>Redes de Computadoras y Ciberseguridad</h3>
+            <p>Redes de Computadoras, Sistemas Distribuidos y seguridad de la información.</p>
+          </article>
+          <article class="area">
+            <div class="area__icono">🗄️</div>
+            <h3>Sistemas Operativos y Bases de Datos</h3>
+            <p>Base de Datos I y II, Sistemas Operativos, Lenguajes, Compiladores e Intérprete.</p>
+          </article>
+          <article class="area">
+            <div class="area__icono">🔌</div>
+            <h3>Hardware y Arquitectura</h3>
+            <p>Circuitos Eléctricos, Sistemas Digitales y Arquitectura de Computadoras I y II.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 8. PLAN DE ESTUDIO POR MODALIDAD ==================== -->
+    <section class="seccion seccion--alterna" id="plan">
+      <div class="contenedor">
+        <header class="seccion__encabezado">
+          <span class="seccion__pre">Malla curricular</span>
+          <h2 class="seccion__titulo">Plan de Estudio por Modalidad</h2>
+          <p class="seccion__desc">Selecciona una modalidad para ver la distribución de asignaturas.</p>
+        </header>
+
+        <div class="tabs" role="tablist" aria-label="Modalidades del plan de estudio">
+          <button class="tab activo" role="tab" aria-selected="true" data-modalidad="matutina">Regular – Matutina</button>
+          <button class="tab" role="tab" aria-selected="false" data-modalidad="sabatina">Sabatina</button>
+          <button class="tab" role="tab" aria-selected="false" data-modalidad="encuentro">Por Encuentro</button>
+        </div>
+
+        <p class="plan__resumen" id="planResumen"></p>
+        <div class="plan" id="planContenedor" role="tabpanel" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- ==================== 9. RESEÑAS ==================== -->
+    <section class="seccion" id="resenas">
+      <div class="contenedor">
+        <header class="seccion__encabezado">
+          <span class="seccion__pre">Opiniones</span>
+          <h2 class="seccion__titulo">Reseñas</h2>
+          <p class="seccion__desc">Lo que opinan estudiantes, egresados y visitantes sobre la carrera.</p>
+        </header>
+
+        <div class="resenas__resumen" id="resenasResumen" hidden>
+          <strong id="promedio">0.0</strong>
+          <span class="estrellas" id="promedioEstrellas"></span>
+          <span id="totalResenas">0 reseñas</span>
+        </div>
+
+        <div class="tarjetas tarjetas--3" id="listaResenas">
+          <!-- Reseñas destacadas (estáticas) -->
+          <article class="resena">
+            <div class="resena__cabecera">
+              <div class="avatar">MR</div>
+              <div><h3>María R.</h3><span class="resena__meta">Estudiante · IV semestre</span></div>
+            </div>
+            <div class="estrellas">★★★★★</div>
+            <p>“Los laboratorios y las prácticas de familiarización me han permitido aplicar lo aprendido desde los primeros años.”</p>
+          </article>
+          <article class="resena">
+            <div class="resena__cabecera">
+              <div class="avatar avatar--cian">JL</div>
+              <div><h3>José L.</h3><span class="resena__meta">Egresado · Desarrollador de software</span></div>
+            </div>
+            <div class="estrellas">★★★★★</div>
+            <p>“La base en algoritmos, bases de datos e ingeniería del software me abrió las puertas a mi primer empleo.”</p>
+          </article>
+          <article class="resena">
+            <div class="resena__cabecera">
+              <div class="avatar avatar--amarillo">AG</div>
+              <div><h3>Ana G.</h3><span class="resena__meta">Estudiante · VIII semestre</span></div>
+            </div>
+            <div class="estrellas">★★★★☆</div>
+            <p>“Me encanta que el plan incluya inteligencia artificial y robótica. Los docentes están muy comprometidos.”</p>
+          </article>
+        </div>
+
+        <h3 class="subtitulo">Comentarios de la comunidad</h3>
+        <div class="tarjetas tarjetas--3" id="resenasBD">
+          <p class="cargando" id="estadoResenas">Cargando comentarios…</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 10. FORMULARIO DE COMENTARIOS ==================== -->
+    <section class="seccion seccion--oscura" id="comentarios">
+      <div class="contenedor formulario-wrap">
+        <div class="formulario__info">
+          <span class="seccion__pre">Tu opinión importa</span>
+          <h2 class="seccion__titulo seccion__titulo--izq">Déjanos tu comentario</h2>
+          <p>Comparte tu experiencia o tus dudas sobre la carrera de Ingeniería en Computación. Tu comentario se guardará en nuestra base de datos y aparecerá en la sección de reseñas.</p>
+          <ul class="contacto">
+            <li>📍 Managua, costado sur Colonia Rubén Darío</li>
+            <li>📞 2289 - 7740</li>
+            <li>🌐 <a href="https://unhsjm.edu.ni" target="_blank" rel="noopener">unhsjm.edu.ni</a></li>
+          </ul>
+        </div>
+
+        <form class="formulario" id="formComentario" novalidate>
+          <div class="campo">
+            <label for="nombre">Nombre completo *</label>
+            <input type="text" id="nombre" name="nombre" maxlength="100" placeholder="Ej. Juan Pérez" required>
+            <small class="error" data-error="nombre"></small>
+          </div>
+
+          <div class="campo">
+            <label for="correo">Correo electrónico *</label>
+            <input type="email" id="correo" name="correo" maxlength="150" placeholder="ejemplo@correo.com" required>
+            <small class="error" data-error="correo"></small>
+          </div>
+
+          <div class="campo-fila">
+            <div class="campo">
+              <label for="tipo">Soy *</label>
+              <select id="tipo" name="tipo" required>
+                <option value="">Seleccione…</option>
+                <option>Estudiante</option>
+                <option>Egresado</option>
+                <option>Docente</option>
+                <option>Aspirante</option>
+                <option>Visitante</option>
+              </select>
+              <small class="error" data-error="tipo"></small>
+            </div>
+            <div class="campo">
+              <label for="modalidad">Modalidad de interés *</label>
+              <select id="modalidad" name="modalidad" required>
+                <option value="">Seleccione…</option>
+                <option>Matutina</option>
+                <option>Sabatina</option>
+                <option>Por Encuentro</option>
+              </select>
+              <small class="error" data-error="modalidad"></small>
+            </div>
+          </div>
+
+          <fieldset class="campo calificacion">
+            <legend>Calificación *</legend>
+            <div class="calificacion__estrellas">
+              <input type="radio" id="e5" name="calificacion" value="5"><label for="e5" title="Excelente">★</label>
+              <input type="radio" id="e4" name="calificacion" value="4"><label for="e4" title="Muy bueno">★</label>
+              <input type="radio" id="e3" name="calificacion" value="3"><label for="e3" title="Bueno">★</label>
+              <input type="radio" id="e2" name="calificacion" value="2"><label for="e2" title="Regular">★</label>
+              <input type="radio" id="e1" name="calificacion" value="1"><label for="e1" title="Malo">★</label>
+            </div>
+            <small class="error" data-error="calificacion"></small>
+          </fieldset>
+
+          <div class="campo">
+            <label for="comentario">Comentario *</label>
+            <textarea id="comentario" name="comentario" rows="5" maxlength="1000" placeholder="Escribe tu comentario…" required></textarea>
+            <small class="contador"><span id="contador">0</span>/1000</small>
+            <small class="error" data-error="comentario"></small>
+          </div>
+
+          <!-- Campo trampa anti-spam (oculto para personas) -->
+          <input type="text" name="sitio_web" class="trampa" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+          <button type="submit" class="btn btn--primario btn--bloque" id="btnEnviar">Enviar comentario</button>
+          <div class="mensaje" id="mensajeForm" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== PIE DE PÁGINA ==================== -->
+  <footer class="footer">
+    <div class="contenedor footer__grid">
+      <div>
+        <img src="img/logo-unhsjm.png" alt="Logo UNHSJM" class="footer__logo">
+        <p>La Universidad Nacional Politécnica fue aprobada el 07 de febrero del 2022, publicada en La Gaceta, Diario Oficial N.° 25, del 08 de febrero de 2022. Hoy Universidad Nacional Héroes de San José de las Mulas.</p>
+      </div>
+      <div>
+        <h4>Enlaces</h4>
+        <ul>
+          <li><a href="#carrera">La carrera</a></li>
+          <li><a href="#plan">Plan de estudio</a></li>
+          <li><a href="#resenas">Reseñas</a></li>
+          <li><a href="#comentarios">Comentarios</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Portales</h4>
+        <ul>
+          <li><a href="https://unhsjm.edu.ni/" target="_blank" rel="noopener">Sitio oficial</a></li>
+          <li><a href="https://eva.unhsjm.edu.ni/" target="_blank" rel="noopener">EVA UNHSJM</a></li>
+          <li><a href="https://bibliotecacentral.unhsjm.edu.ni/" target="_blank" rel="noopener">Biblioteca Aldo Díaz Lacayo</a></li>
+          <li><a href="https://expediente.unhsjm.edu.ni/login" target="_blank" rel="noopener">Expediente Digital</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <p>Managua, costado sur Colonia Rubén Darío<br>Tel. 2289 - 7740</p>
+      </div>
+    </div>
+    <div class="footer__copy">
+      <p>Examen II Parcial · Programación Web · Elaborado por <strong>Giancarlo Javier Montes Arauz</strong> · <span id="anio"></span></p>
+    </div>
+  </footer>
+
+  <button class="arriba" id="btnArriba" aria-label="Volver arriba">↑</button>
+
+  <script src="js/plan.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/comentarios.js"></script>
+</body>
+</html>
