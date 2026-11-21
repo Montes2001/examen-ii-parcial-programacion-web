@@ -43,7 +43,8 @@ Página web informativa de la carrera **Ingeniería en Computación** de la **Un
 ├── api/comentarios.js    API serverless GET/POST → Neon
 ├── db/schema.sql         Script de la tabla "comentarios"
 ├── img/                  Logos e imágenes del carrusel
-├── docs/DOCUMENTACION.md Documentación completa
+├── docs/DOCUMENTACION.md Documentación completa (Markdown)
+├── docs/DOCUMENTACION.pdf Documentación completa (PDF)
 ├── package.json
 └── vercel.json
 ```
@@ -57,4 +58,4 @@ vercel env pull .env.local   # descarga DATABASE_URL
 vercel dev               # http://localhost:3000
 ```
 
-Consulte [docs/DOCUMENTACION.md](docs/DOCUMENTACION.md) para la documentación completa.
+Consulte [docs/DOCUMENTACION.pdf](docs/DOCUMENTACION.pdf) (o [docs/DOCUMENTACION.md](docs/DOCUMENTACION.md)) para la documentación completa.
